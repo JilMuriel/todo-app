@@ -1,0 +1,11 @@
+.form-input {
+  outline: none;
+}
+.form-input:focus-within ~ .form-input__label,
+input:not(:placeholder-shown) ~ .form-input__label {
+  @apply transform scale-75 -translate-y-6;
+}
+
+.form-input:focus-within ~ .form-input__label {
+  @apply text-black;
+}
